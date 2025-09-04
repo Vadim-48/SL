@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "FreightBigProLight-Italic", sans-serif;
+  --third-family: "Adieu", sans-serif;
+  --font3: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 700;
+  color: #fff;
+  background: #fafafa;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 62px;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+  font-size: 11px;
+  color: #fff;
+  border: 1px solid rgba(253, 253, 253, 0.32);
+  width: 183px;
+  height: 48px;
+}
+
+.header {
+  padding-top: 24px;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  background: grey;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 83px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 40.8%;
+      flex-basis: 40.8%;
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 62.8%;
+      flex-basis: 62.8%;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.burger__wrap {
+  display: none;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  z-index: 10;
+  padding: 2px;
+}
+
+.burger__wrap span {
+  position: absolute;
+  height: 1px;
+  width: 28px;
+  background-color: #fff;
+  top: 11px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.burger__wrap span:nth-child(2) {
+  top: 17px;
+}
+
+.burger__text {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 23px;
+}
+
+@media (max-width: 1440px) {
+  .burger__wrap {
+    display: block;
+  }
+
+  .burger__wrap.active span:first-child {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 13px;
+  }
+
+  .burger__wrap.active span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 13px;
+  }
+
+  .burger__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+}
