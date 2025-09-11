@@ -212,7 +212,7 @@ body {
   font-weight: 300;
   color: #fff;
   position: absolute;
-  top: 59vh;
+  top: 61vh;
   right: 4vw;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -248,7 +248,7 @@ body {
   -webkit-transform: translateX(-60%);
       -ms-transform: translateX(-60%);
           transform: translateX(-60%);
-  left: 40%;
+  left: 39%;
 }
 
 .header__aside {
@@ -277,7 +277,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  bottom: 32px;
+  bottom: 42px;
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.06em;
@@ -288,7 +288,7 @@ body {
 }
 
 .hero__btn-more {
-  margin-top: 52px;
+  margin-top: 62px;
 }
 
 .hero__btn-more::before,
@@ -485,6 +485,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 137px;
 }
 
