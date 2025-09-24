@@ -6,42 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto&display=swap&_v=20250918161722" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto&display=swap&_v=20250925001607" rel="stylesheet">
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250918161722"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250925001607"
     />
-    <link rel="stylesheet" href="css/style.css?_v=20250918161722">
+    <link rel="stylesheet" href="css/style.css?_v=20250925001607">
     <title>SL</title>
 </head>
 <body>
-    <header class="header header__relative" id="header"> 
-        <div class="container container__absolute">
+    <header class="header" id="header"> 
+        <div class="container">
             <div class="header__wrapper">
     <nav class="nav">
         <a href="index.html" class="logo">Logo</a>
             <ul class="nav__menu">
                 <li class="menu__item">
-                    <a href="index.html" class="menu__link">Home</a>
-                </li>
-                <li class="menu__item">
-                    <a href="news.html" class="menu__link">Projects</a>
+                    <a href="projects-page.html" class="menu__link">Projects</a>
                 </li>
                 <li class="menu__item">
                     <a href="#!" class="menu__link">About us</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#!" class="menu__link">Blog</a>
+                    <a href="news.html" class="menu__link">Blog</a>
                 </li>
                 <li class="menu__item">
                     <a href="#!" class="menu__link">Contacts</a>
                 </li>
-                <li class="menu__item menu__btn">
-                    <button href="#!" class="item__btn btn">Send Request</button>
-                </li>
             </ul>
         <div class="burger"> 
-            <div class="burger__wrap">
+            <div class="burger__btn">
                 <span></span>
                 <span></span>
             </div>
@@ -53,7 +47,60 @@
 </div>
 
         </div>
-        <div class="swiper">
+        <div class="burger__block">
+    <ul class="burger__menu">
+        <li class="burger__item">
+            <a href="index.html" class="menu__link">Home</a>
+        </li>
+        <li class="burger__item">
+            <a href="projects-page.html" class="menu__link">Projects</a>
+        </li>
+        <li class="burger__item">
+            <a href="#!" class="menu__link">About us</a>
+        </li>
+        <li class="burger__item">
+            <a href="news.html" class="menu__link">Blog</a>
+        </li>
+        <li class="burger__item">
+            <a href="#!" class="menu__link">Contacts</a>
+        </li>
+        <li class="menu__btn burger__menu-btn">
+            <button href="#!" class="item__btn btn">Send Request</button>
+        </li>
+    </ul>
+    <div class="container">
+    <div class="burger__footer">
+        <div class="hero__main-footer">
+    <div class="main-footer__text">
+        <span>Fb</span>
+        <span>In</span>
+        <span>Be</span>
+    </div>
+    <div class="main-footer__location">
+        <button class="location__btn">
+            <img src="img/hero/location-img.svg" alt="" class="location__img">
+            <span class="location__text">Berlin</span>
+            <img src="img/hero/location-arrow.svg" alt="" class="location__arrow">
+        </button>
+        <div class="location__content">
+            <span>Berlin</span>
+            <span>Tokio</span>
+            <span>Paris</span>
+            <span>London</span>
+            <span>Kyiv</span>
+        </div>
+    </div>
+    <div class="main-footer__contacts">
+        <a href="tel:+380983527547" class="main-footer__phone">+380983527547</a>
+        <a href="maito:info@gmail.com" class="main-footer__mail">E: info@gmail.com</a>
+    </div>
+</div>
+    </div>
+</div>
+    </header>
+    <main>
+        <section class="hero pos-relative">
+            <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
     
@@ -86,24 +133,24 @@
     <!-- If we need scrollbar -->
     <!-- <div class="swiper-scrollbar"></div> -->
 </div> 
-        <div class="header__hero">
-    <h1 class="hero__title">
+            <div class="hero-block">
+    <h1 class="hero-block__title">
             Thoughtful making of space
     </h1>              
-    <a href="#!" class="hero__btn-more btn__more">
+    <a href="#!" class="hero-block__btn-more btn__more">
             Discover more
     </a>
 </div>
-<div class="header__aside">
-        <p class="aside__text">
+<div class="hero-aside">
+        <p class="hero-aside__text">
             Next Project
         </p>
-        <h2 class="aside__title">
+        <h2 class="hero-aside__title">
             Perfect proportions
         </h2>
     </div>
-        <div class="container container__absolute">
-            <div class="header__main-footer">
+            <div class="container">
+                <div class="hero__main-footer">
     <div class="main-footer__text">
         <span>Fb</span>
         <span>In</span>
@@ -111,9 +158,9 @@
     </div>
     <div class="main-footer__location">
         <button class="location__btn">
-            <img src="img/header/location__img.svg" alt="" class="location__img">
+            <img src="img/hero/location-img.svg" alt="" class="location__img">
             <span class="location__text">Berlin</span>
-            <img src="img/header/location_arrow.svg" alt="" class="location__arrow">
+            <img src="img/hero/location-arrow.svg" alt="" class="location__arrow">
         </button>
         <div class="location__content">
             <span>Berlin</span>
@@ -128,9 +175,8 @@
         <a href="maito:info@gmail.com" class="main-footer__mail">E: info@gmail.com</a>
     </div>
 </div>
-        </div>
-    </header>
-    <main>
+            </div>
+        </section>
         <section class="philosophy">
             <div class="container">
                 <picture class="philosophy__img-right">
@@ -175,18 +221,18 @@
 <!-- </div> -->
             </div>
         </section>
-        <section class="projects">
+        <section class="our-project">
             <div class="container">
-                <div class="projects__wrap">
-    <h2 class="projects__title title">Our Projects</h2>
-    <p class="projects__text text">
+                <div class="our-project__wrap">
+    <h2 class="our-project__title title">Our our-project</h2>
+    <p class="our-project__text text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. 
         Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
     </p>
 </div>
-<!-- <p class="projects__text-decor">We have more 56 project</p> -->
-<div class="projects__galery">
-    <div class="projects__block block-1">
+<!-- <p class="our-project__text-decor">We have more 56 project</p> -->
+<div class="our-project__galery">
+    <div class="our-project__block block-1">
         <div class="block__inner">
             <div class="block__top">
                 <span>Lodz</span>
@@ -200,11 +246,11 @@
                 </a>
             </div>
         </div>
-        <picture class="projects__picture">
+        <picture class="our-project__picture">
             <img src="img/project/project_img-1.jpg" alt="img">
         </picture>
     </div>
-    <div class="projects__block block-2">
+    <div class="our-project__block block-2">
         <div class="block__inner block__visible">
             <div class="block__top">
                 <span>Lodz</span>
@@ -218,11 +264,11 @@
                 </a>
             </div>
         </div>
-        <picture class="projects__picture">
+        <picture class="our-project__picture">
             <img src="img/project/project_img-2.jpg" alt="img">
         </picture>
     </div>
-    <div class="projects__block block-3 block-large">
+    <div class="our-project__block block-3 block-large">
         <div class="block__inner">
             <div class="block__top">
                 <span>Lodz</span>
@@ -236,11 +282,11 @@
                 </a>
             </div>
         </div>
-        <picture class="projects__picture">
+        <picture class="our-project__picture">
             <img src="img/project/project_img-3.jpg" alt="img">
         </picture>
     </div>
-    <div class="projects__block block-4">
+    <div class="our-project__block block-4">
         <div class="block__inner">
             <div class="block__top">
                 <span>Lodz</span>
@@ -254,11 +300,11 @@
                 </a>
             </div>
         </div>
-        <picture class="projects__picture">
+        <picture class="our-project__picture">
             <img src="img/project/project_img-4.jpg" alt="img">
         </picture>
     </div>
-    <div class="projects__block block-6">
+    <div class="our-project__block block-6">
         <div class="block__inner">
             <div class="block__top">
                 <span>Lodz</span>
@@ -272,12 +318,12 @@
                 </a>
             </div>
         </div>
-        <picture class="projects__picture">
+        <picture class="our-project__picture">
             <img src="img/project/project_img-1.jpg" alt="img">
         </picture>
     </div>
-    <div class="projects__block block-more">
-        <h3 class="block-more__title">See more 60 projects</h3>
+    <div class="our-project__block block-more">
+        <h3 class="block-more__title">See more 60 our-project</h3>
         <a href="#!" class="block-more__picture-link">
             <picture class="block-more__picture">
                 <img src="img/project/project_img-5.jpg" alt="img">
@@ -336,49 +382,49 @@
             <div class="container">
                 <div class="lorem__galery">
     <picture class="lorem__photo lorem__photo_1">
-        <source srcset="img/lorem/lorem_1-1.png" media="(max-width: 1100px)">
-        <source srcset="img/lorem/lorem_1-2.png" media="(max-width: 850px)">
-        <img src="img/lorem/lorem_1.png" alt="">
+        <!-- <source srcset="img/lorem/lorem_1-1.jpg" media="(max-width: 1100px)"> -->
+        <source srcset="img/lorem/lorem_1-2.jpg" media="(max-width: 850px)">
+        <img src="img/lorem/lorem_1.jpg" alt="">
     </picture>
     <picture class="lorem__photo lorem__photo_2">
-        <source srcset="img/lorem/lorem_2-1.png" media="(max-width: 1100px)">
-        <source srcset="img/lorem/lorem_2-2.png" media="(max-width: 850px)">
-        <source srcset="img/lorem/lorem_2-3.png" media="(max-width: 450px)">
-        <img src="img/lorem/lorem_2.png" alt="">
+        <!-- <source srcset="img/lorem/lorem_2-1.jpg" media="(max-width: 1100px)"> -->
+        <source srcset="img/lorem/lorem_2-2.jpg" media="(max-width: 850px)">
+        <!-- <source srcset="img/lorem/lorem_2-3.jpg" media="(max-width: 450px)"> -->
+        <img src="img/lorem/lorem_2.jpg" alt="">
     </picture>
     <picture class="lorem__photo lorem__photo_3">
-        <source srcset="img/lorem/lorem_3-1.png" media="(max-width: 1100px)">
-        <source srcset="img/lorem/lorem_3-2.png" media="(max-width: 850px)">
-        <source srcset="img/lorem/lorem_3-3.png" media="(max-width: 450px)">
-        <img src="img/lorem/lorem_3.png" alt="">
+        <!-- <source srcset="img/lorem/lorem_3-1.jpg" media="(max-width: 1100px)"> -->
+        <source srcset="img/lorem/lorem_3-2.jpg" media="(max-width: 850px)">
+        <!-- <source srcset="img/lorem/lorem_3-3.jpg" media="(max-width: 450px)"> -->
+        <img src="img/lorem/lorem_3.jpg" alt="">
     </picture>
     <picture class="lorem__photo lorem__photo_4">
-        <source srcset="img/lorem/lorem_4-1.png" media="(max-width: 1100px)">
-        <source srcset="img/lorem/lorem_4-2.png" media="(max-width: 850px)">
-        <source srcset="img/lorem/lorem_4-3.png" media="(max-width: 450px)">
-        <img src="img/lorem/lorem_4.png" alt="">
+        <!-- <source srcset="img/lorem/lorem_4-1.jpg" media="(max-width: 1100px)"> -->
+        <source srcset="img/lorem/lorem_4-2.jpg" media="(max-width: 850px)">
+        <!-- <source srcset="img/lorem/lorem_4-3.jpg" media="(max-width: 450px)"> -->
+        <img src="img/lorem/lorem_4.jpg" alt="">
     </picture>
     <picture class="lorem__photo lorem__photo_5">
-        <source srcset="img/lorem/lorem_5-3.png" media="(max-width: 450px)">
-        <img src="img/lorem/lorem_5.png" alt="">
+        <source srcset="img/lorem/lorem_5-3.jpg" media="(max-width: 450px)">
+        <img src="img/lorem/lorem_5.jpg" alt="">
     </picture>
     <picture class="lorem__photo lorem__photo_6">
-        <source srcset="img/lorem/lorem_6-1.png" media="(max-width: 1100px)">
-        <source srcset="img/lorem/lorem_6-2.png" media="(max-width: 850px)">
-        <source srcset="img/lorem/lorem_6-3.png" media="(max-width: 450px)">
-        <img src="img/lorem/lorem_6.png" alt="">
+        <!-- <source srcset="img/lorem/lorem_6-1.jpg" media="(max-width: 1100px)"> -->
+        <source srcset="img/lorem/lorem_6-2.jpg" media="(max-width: 850px)">
+        <!-- <source srcset="img/lorem/lorem_6-3.jpg" media="(max-width: 450px)"> -->
+        <img src="img/lorem/lorem_6.jpg" alt="">
     </picture>
     <picture class="lorem__photo lorem__photo_7">
-        <source srcset="img/lorem/lorem_7-1.png" media="(max-width: 1100px)">
-        <source srcset="img/lorem/lorem_7-2.png" media="(max-width: 850px)">
-        <source srcset="img/lorem/lorem_7-3.png" media="(max-width: 450px)">
-        <img src="img/lorem/lorem_7.png" alt="">
+        <!-- <source srcset="img/lorem/lorem_7-1.jpg" media="(max-width: 1100px)"> -->
+        <source srcset="img/lorem/lorem_7-2.jpg" media="(max-width: 850px)">
+        <!-- <source srcset="img/lorem/lorem_7-3.jpg" media="(max-width: 450px)"> -->
+        <img src="img/lorem/lorem_7.jpg" alt="">
     </picture>
     <picture class="lorem__photo lorem__photo_8">
-        <source srcset="img/lorem/lorem_8-1.png" media="(max-width: 1100px)">
-        <source srcset="img/lorem/lorem_8-2.png" media="(max-width: 850px)">
-        <source srcset="img/lorem/lorem_8-3.png" media="(max-width: 450px)">
-        <img src="img/lorem/lorem_8.png" alt="">
+        <!-- <source srcset="img/lorem/lorem_8-1.jpg" media="(max-width: 1100px)"> -->
+        <source srcset="img/lorem/lorem_8-2.jpg" media="(max-width: 850px)">
+        <!-- <source srcset="img/lorem/lorem_8-3.jpg" media="(max-width: 450px)"> -->
+        <img src="img/lorem/lorem_8.jpg" alt="">
     </picture>
 </div>
 <div class="lorem__wrap">
@@ -393,52 +439,53 @@
     </main>
     <footer class="footer" id="footer">
         <div class="container">
-            <div class="footer__top">
-    <h2 class="footer__title title">Drop us a line</h2>
-    <p class="footer__text text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. 
-    </p>
-</div>
-<div class="footer__wrap">
-    <div class="footer__wrap-content">
-        <div class="footer__wrap-list">
-            <ul class="footer__list">
-                <li class="list__item">Kyiv</li>
-                <li class="list__item">
-                    <a href="tel:+3802095550104">(209) 555-0104</a>
-                </li>
-                <li class="list__item">6391 Elgin St. Celina,</li>
-                <li class="list__item">Delaware 10299</li>
-            </ul>
-            <ul class="footer__list">
-                <li class="list__item">Lviv</li>
-                <li class="list__item">
-                    <a href="tel:+3802095550104">(209) 555-0104</a>
-                </li>
-                <li class="list__item">6391 Elgin St. Celina,</li>
-                <li class="list__item">Delaware 10299</li>
-            </ul>
-            <ul class="footer__list">
-                <li class="list__item">Kharkiv</li>
-                <li class="list__item">
-                    <a href="tel:+3802095550104">(209) 555-0104</a>
-                </li>
-                <li class="list__item">6391 Elgin St. Celina,</li>
-                <li class="list__item">Delaware 10299</li>
-            </ul>
-        </div>
-        <ul class="footer__mail-text">
-            <li class="mail-text__item">
-                <a href="maito:info@gmail.com" class="footer__mail">info@gmail.com</a>
+            
+<div class="footer__wrapper">
+    <div class="footer__top">
+        <h2 class="footer__title title">Drop us a line</h2>
+        <p class="footer__text text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. 
+        </p>
+    </div>
+    <div class="footer__wrap-list">
+        <ul class="footer__list">
+            <li class="list__item">Kyiv</li>
+            <li class="list__item">
+                <a href="tel:+3802095550104">(209) 555-0104</a>
             </li>
-            <li class="mail-text__item">
+            <li class="list__item">6391 Elgin St. Celina,</li>
+            <li class="list__item">Delaware 10299</li>
+        </ul>
+        <ul class="footer__list">
+            <li class="list__item">Lviv</li>
+            <li class="list__item">
+                <a href="tel:+3802095550104">(209) 555-0104</a>
+            </li>
+            <li class="list__item">6391 Elgin St. Celina,</li>
+            <li class="list__item">Delaware 10299</li>
+        </ul>
+        <ul class="footer__list">
+            <li class="list__item">Kharkiv</li>
+            <li class="list__item">
+                <a href="tel:+3802095550104">(209) 555-0104</a>
+            </li>
+            <li class="list__item">6391 Elgin St. Celina,</li>
+            <li class="list__item">Delaware 10299</li>
+        </ul>
+        <!-- </div> -->
+        <div class="footer__mail-wrap">
+            <span class="mail-wrap__mail">
+                <a href="maito:info@gmail.com">info@gmail.com</a>
+            </span>
+            <div  class="mail-wrap__text">
                 <span>Fb</span>
                 <span>In</span>
                 <span>Be</span>
-            </li>
-        </ul>
+            </div>
+        </div>
         <button class="footer__btn btn">Make request</button>
     </div>
+    <!-- <button class="footer__btn btn">Make request</button> -->
 </div>
 <div class="footer__bottom">
     <p class="footer__rights">
@@ -446,17 +493,16 @@
     </p>
     <div class="footer__bottom-wrap">
         <span>Made with love in</span>
-        <div class="footer__first-wrap">
-            <span>The First</span>
-            <span>The Last.</span>
+        <div class="footer__first-last">
+            <img src="img/first-last.svg" alt="">
         </div>
     </div>
 </div>
-<!-- <picture><source srcset="img/footer-img.webp" type="image/webp"><img src="img/footer-img.png" alt=""></picture> -->
+<picture><source srcset="img/footer-img.webp" type="image/webp"><img src="img/footer-img.png" alt="" class="footer__bg"></picture>
 
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250918161722"></script>
-    <script src="js/app.min.js?_v=20250918161722"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250925001607"></script>
+    <script src="js/app.min.js?_v=20250925001607" defer></script>
 </body>
 </html>
